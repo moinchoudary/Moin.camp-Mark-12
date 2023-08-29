@@ -12,10 +12,10 @@ function theTriangle() {
     const sumOfAngles = calculateSumOfAngles(Number(inputs[0].value),Number(inputs[1].value), Number(inputs[2].value));
     
     if(sumOfAngles === 180){
-        console.log("Yay, The angles form a triangle");
+        outputE1.innerText = "Yay, The angles form a triangle";
     }
     else {
-        console.log("Oh Oh! The angles don't form a triangle");
+        outputE1.innerText = "Oh Oh! The angles don't form a triangle";
     }
 }
 
