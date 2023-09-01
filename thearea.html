@@ -2,20 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Area Of Triangle</title>
+    <title>Triangles and You</title>
 </head>
 <body>
-    <h1>Check Area Of Triangle</h1>
+    <nav>
+        <a href = "thetriangle.html">The Triangle?</a>
+        <a href = "quiz.html">Triangle Quiz</a>
+        <a href ="hypotenuse.html">Calculate hypotenuse</a>
+    </nav>
+        <h1>Fun with Triangles</h1>
+    
+        <h3 class="sub-heading">Calculate the Area</h3>
 
-    <h3>Area of a triangle = 1/2(Base*Height)</h3>
-    <label>Base (in cm)</label>
-    <input type = "number" class = "side-input" />
-    <label>Height(in cm)</label>
-    <input type = "number" class = "side-input" />
-    <button id = "area-btn">Find Area</button>
-    <div id = "output"></div>
-
-    <script src = thearea.js></script>
+        <label for="area-base">Base(in cm)
+        <input type="number" class="area-input inputbox" placeholder="Enter Base">
+        </label>
+        <label for="area-height">Height(in cm)
+        <input type="number" class="area-input inputbox" placeholder="Enter Height">
+        </label>
+        <button id="btn-area" class="btn">Calculate Area</button>
+        <div class="result" id="area-result">Area of triangle will be displayed here</div>
+        <div class="formula">
+            Area of triangle is calculated by using the formula: (Base x Height) / 2 
+        </div>
+    
+    <script src="thearea.js"></script>
+    
+    
 </body>
 </html>
